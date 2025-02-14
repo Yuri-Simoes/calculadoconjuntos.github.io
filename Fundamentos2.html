@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha a Operação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .topo {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .botao-voltar {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .botao-voltar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body onload="exibirEscolha()">
+    <div class="topo" id="opcaoEscolhida">Nenhuma escolha foi feita.</div>
+
+    <button class="botao-voltar" onclick="voltar()">Voltar</button>
+
+    <script src="Conjuntos.js"></script>
+    <script>
+        function voltar() {
+            window.location.href = "Fundamentos.html"; 
+        }
+    </script>
+</body>
+</html>
